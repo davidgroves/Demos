@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# Although this says it is for Python3, it runs fine under Python2 as well.
+# The import below causes python2 to use print in a way similar to python3. Without it,
+# when run under python2 the print statements will look funny (but contain the correct information).
+from __future__ import print_function
+
 # The requests library is a really commonly used third party library for making HTTP / HTTPS and other
 # web type requests.
 import requests
@@ -106,12 +111,13 @@ if __name__ == '__main__':
     print ("{0} + {1} = {2}".format(onedollar, onepound, onedollar + onepound))
     print ("{0} + {1} = {2}".format(onedollar, onemillionyen, onedollar + onemillionyen))
 
+# IF YOU ACTUALLY WANT TO USE SOMETHING LIKE THIS
 # For a fully featured currency class, I would recommend you look at one of :-
 # https://code.google.com/p/python-money/
 # or
 # http://quantlib.org/index.shtml
 
-# Improvements.
+# POTENTIAL FUTURE IMPROVEMENTS
 # A Currency (as in US Dollars) should be different from
 # an amount of Money (as in 1 US Dollar).
 # This would allow you to only pass the currency type into
