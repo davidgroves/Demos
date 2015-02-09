@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 
 import subprocess
 import datetime
@@ -7,6 +7,9 @@ import xlsxwriter
 # Written for OSX, so assumes OSX like ping output.
 # We cannot use native methods, as ping requires root or system
 # capabilities to use. ping binary on most unixes is setuid root.
+
+# Mostly designed to demo xlsxwriter and show how we can produce
+# manager friendly excel documents without much effort.
 
 target = '8.8.8.8'
 time=[]
