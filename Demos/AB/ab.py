@@ -20,7 +20,7 @@ class B:
     def __init__(self, value):
         self.value = self, value
 
-mya = A("I am an instance of A")
+mya = A("I am an instance of A called mya")
 myb = B(mya)
 
 print (">>> print(A)")
@@ -49,4 +49,3 @@ print (bar.value)
 print ("### Or, looking a little ugly (I'd comment this) we can do it all in one line.")
 print (">>> print (myb.value[1].value)")
 print (myb.value[1].value)
-
