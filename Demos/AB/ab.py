@@ -36,7 +36,7 @@ print ("### Note next we get back a tuple, the 0th entry is mya, the 1st is myb
 print (">>> print(myb.value)")
 print (myb.value)
 
-print ("### So we can get both bits explicitly, to capture both the A and B instances")
+print ("### So we can get both elements explicitly, to capture both the A and B instances")
 print (">>> foo,bar = myb.value")
 (foo,bar) = myb.value
 
